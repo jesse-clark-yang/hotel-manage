@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.yfc.hotel.manage.dao.HotelMapper">
+
+    <select id="selectBy" resultType="com.yfc.hotel.manage.dto.Result">
+        SELECT t1.gstname,t2.mon,t2.nights
+        FROM table1 t1
+        LEFT JOIN
+        (SELECT mon,profileid,SUM(nights) nights FROM table2 GROUP BY mon,profileid) AS t2 ON t1.profileid=t2.profileid;
+    </select>
+</mapper>
