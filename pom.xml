@@ -23,7 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <druid.version>1.0.9</druid.version>
         <mybatis.spring.version>2.1.1</mybatis.spring.version>
-        <mysql.version>5.1.47</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <maven.compile.plugin.version>3.6.0</maven.compile.plugin.version>
         <maven.jar.plugin.version>3.0.1</maven.jar.plugin.version>
         <maven.war.plugin.version>3.0.0</maven.war.plugin.version>
